@@ -19,14 +19,14 @@ const Hero: FC<heroProps> = ({ }) => {
           All Work
         </Link>
       </div>
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full gap-6">
         <div className="aspect-square w-auto h-[40vw] max-h-[70vh] max-w-full bg-gradient-to-tr from-pink-800 to-pink-600 opacity-70 bg-opacity-40 backdrop-blur border-[1px] border-stone-100 shadow rounded" />
         <div className="text-sm grid grid-cols-2 gap-8">
           <p>
-            See work: Journey through Ripples
+            {`See work: Journey through Ripples`}
           </p>
           <p>
-            Some description can go right here
+            {`Some description can go right here`}
           </p>
         </div>
       </div>
