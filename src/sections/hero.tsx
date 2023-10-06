@@ -7,8 +7,8 @@ interface heroProps {
 
 const Hero: FC<heroProps> = ({ }) => {
   return (
-    <section className="h-[34rem] w-full fourths-grid">
-      <div className="flex flex-col gap-10 py-14">
+    <section className="h-full w-full fourths-grid section">
+      <div className="flex flex-col gap-10 section-content">
         <h1 className="text-5xl font-medium">
           Design Studio
         </h1>
@@ -19,8 +19,8 @@ const Hero: FC<heroProps> = ({ }) => {
           All Work
         </Link>
       </div>
-      <div className="flex flex-col items-center">
-        <div className="w-auto h-2/3 max-w-full max-h-full aspect-square bg-pink-700 bg-opacity-30 backdrop-blur border-[1px] border-stone-100 shadow rounded" />
+      <div className="flex flex-col items-center w-full">
+        <div className="aspect-square w-auto h-[40vw] max-h-[70vh] max-w-full bg-pink-700 bg-opacity-30 backdrop-blur border-[1px] border-stone-100 shadow rounded" />
         <div className="text-sm grid grid-cols-2 gap-8">
           <p>
             See work: Journey through Ripples

@@ -96,7 +96,17 @@
   @apply grid grid-cols-[1fr_3fr];
 }
 
+/** Major stylings */
+.section {
+  @apply border-b-[1px] border-underline pb-24;
+}
+
+.section-content {
+  @apply py-14;
+}
+
 /** Texts */
+
 .link {
   @apply text-base underline underline-offset-4 decoration-underline hover:decoration-black transition-colors;
 }
