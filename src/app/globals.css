@@ -68,7 +68,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border text-base;
   }
   body {
     @apply bg-background text-foreground;
@@ -102,10 +102,18 @@
 }
 
 .section-content {
-  @apply py-14;
+  @apply py-20;
 }
 
 /** Texts */
+
+.section-header {
+  @apply text-2xl;
+}
+
+.section-description {
+  @apply text-[15px];
+}
 
 .link {
   @apply text-base underline underline-offset-4 decoration-underline hover:decoration-black transition-colors;

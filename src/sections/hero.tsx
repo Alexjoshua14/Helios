@@ -20,7 +20,7 @@ const Hero: FC<heroProps> = ({ }) => {
         </Link>
       </div>
       <div className="flex flex-col items-center w-full">
-        <div className="aspect-square w-auto h-[40vw] max-h-[70vh] max-w-full bg-pink-700 bg-opacity-30 backdrop-blur border-[1px] border-stone-100 shadow rounded" />
+        <div className="aspect-square w-auto h-[40vw] max-h-[70vh] max-w-full bg-gradient-to-tr from-pink-800 to-pink-600 opacity-70 bg-opacity-40 backdrop-blur border-[1px] border-stone-100 shadow rounded" />
         <div className="text-sm grid grid-cols-2 gap-8">
           <p>
             See work: Journey through Ripples
