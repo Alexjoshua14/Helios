@@ -9,7 +9,7 @@ interface navBarProps {
 const NavBar: FC<navBarProps> = ({ }) => {
   return (
     <section className="nav-bar flex items-center justify-between backdrop-blur">
-      <nav className="flex-1 w-full h-full flex items-center justify-center page-margin border-b-[1px] border-stone-300">
+      <nav className="flex-1 w-full h-full flex items-center justify-center page-margin border-b-[1px] border-underline">
         <div className="w-1/4 h-full flex items-center">
           <h1 hidden>NAV</h1>
           <PiSunHorizonFill size={40} />

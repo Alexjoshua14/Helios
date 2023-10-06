@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -49,6 +52,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        underline: {
+          DEFAULT: colors.stone[300],
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

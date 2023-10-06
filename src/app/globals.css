@@ -77,7 +77,7 @@
 
 /** Keep these synced */
 .page-padding {
-  @apply min-h-screen px-14 pt-28 pb-14;
+  @apply min-h-screen px-14 pt-40 pb-14;
 }
 
 .page-margin {
@@ -89,3 +89,14 @@
 }
 
 /** End synced section */
+
+/** Layouts */
+
+.fourths-grid {
+  @apply grid grid-cols-[1fr_3fr];
+}
+
+/** Texts */
+.link {
+  @apply text-base underline underline-offset-4 decoration-underline hover:decoration-black transition-colors;
+}
