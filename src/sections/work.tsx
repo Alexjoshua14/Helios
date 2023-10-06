@@ -11,11 +11,9 @@ interface workProps {
 
 const Work: FC<workProps> = ({ }) => {
   const [carouselPosition, setCarouselPosition] = useState(0);
-  const carouselItem = useRef(null)
 
   const items = [1, 2, 3, 4, 5];
   const itemWidth = 27; //rem
-  const trackWidth = items.length * itemWidth;
 
   const next = () => {
     setCarouselPosition((prev) => {
@@ -32,7 +30,7 @@ const Work: FC<workProps> = ({ }) => {
   }
 
   return (
-    <section className="w-full max-w-screen section section-content flex flex-col gap-8 border-2 border-teal-700">
+    <section className="w-full max-w-screen section section-content flex flex-col gap-8">
       <h2 className="section-header">
         Work
       </h2>

@@ -19,7 +19,7 @@ const Card: FC<cardProps> = ({ image, title, description, className }) => {
           className="object-contain"
         />
       </div>
-      <div className=" leading-relaxed bg-yellow-700">
+      <div className=" leading-relaxed">
         <p className="font-medium">
           {title}
         </p>
