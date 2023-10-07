@@ -108,7 +108,7 @@
 /** Texts */
 
 .section-header {
-  @apply text-2xl;
+  @apply text-3xl;
 }
 
 .section-description {

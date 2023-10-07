@@ -7,7 +7,7 @@ import Work from '@/sections/work'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between page-padding">
+    <main className="flex flex-col items-center justify-between page-padding w-full overflow-hidden">
       <Hero />
       <About />
       <Work />
