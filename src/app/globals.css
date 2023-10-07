@@ -85,7 +85,15 @@
 }
 
 .nav-bar {
-  @apply h-16 w-full fixed top-0 z-40 transition-all;
+  @apply w-full fixed top-0 z-40 transition-all;
+}
+
+.nav-collapse {
+  @apply h-16;
+}
+
+.nav-expand {
+  @apply h-28;
 }
 
 /** End synced section */

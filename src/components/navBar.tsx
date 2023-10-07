@@ -1,5 +1,10 @@
-import Link from 'next/link'
+'use client'
+
 import { FC } from 'react'
+import Link from 'next/link'
+
+import { useExpand } from '@/lib/hooks/useExpand'
+
 import { PiSunHorizonFill } from 'react-icons/pi'
 
 interface navBarProps {
@@ -7,8 +12,10 @@ interface navBarProps {
 }
 
 const NavBar: FC<navBarProps> = ({ }) => {
+  const [expand] = useExpand(500)
+
   return (
-    <section className="nav-bar flex items-center justify-between backdrop-blur-3xl">
+    <section className={`nav-bar flex items-center justify-between backdrop-blur-3xl ${expand ? "nav-expand" : "nav-collapse"}`}>
       <nav className="flex-1 w-full h-full flex items-center justify-center page-margin border-b-[1px] border-underline">
         <div className="w-1/4 h-full flex items-center">
           <h1 hidden>NAV</h1>
