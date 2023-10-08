@@ -26,10 +26,19 @@ const Carousel: FC<carouselProps> = ({ items, link, className }) => {
   // we can divide the current scroll width by the number of items to calculate
   // an individual item's width
   useEffect(() => {
-    let trackWidth = trackRef.current?.scrollWidth ?? 0;
+    const handleResize = () => {
+      let trackWidth = trackRef.current?.scrollWidth ?? 0;
+      updateItemWidth(trackWidth / items.length);
+    }
 
-    updateItemWidth(trackWidth / items.length);
-  }, [trackRef, items])
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+
+  }, [items])
 
   const next = () => {
     setIndex((prev) => {
@@ -54,7 +63,7 @@ const Carousel: FC<carouselProps> = ({ items, link, className }) => {
       >
         <div ref={trackRef} className={`h-full absolute w-fit flex track transition-all]`}>
           {items.map((item) => (
-            <Card key={item.id} image={item.image} title={item.title} description={item.description} className={`h-full w-[27rem] me-4`} />
+            <Card key={item.id} image={{ ...item.image, sizes: '(max-width: 640px) 90vw , 42vw' }} title={item.title} description={item.description} className={`h-full min-w-[200px] w-[90vw] sm:w-[42vw] me-4`} />
           ))}
         </div>
       </motion.div>
