@@ -11,6 +11,25 @@ interface navBarProps {
 
 }
 
+const navOptions = [
+  {
+    link: '/',
+    text: 'Work',
+  },
+  {
+    link: '/',
+    text: 'About',
+  },
+  {
+    link: '/',
+    text: 'Recently',
+  },
+  {
+    link: '/',
+    text: 'Contact',
+  },
+]
+
 const NavBar: FC<navBarProps> = ({ }) => {
   const [expand] = useExpand(500)
 
@@ -18,39 +37,18 @@ const NavBar: FC<navBarProps> = ({ }) => {
     <section className={`nav-bar flex items-center justify-between backdrop-blur-3xl ${expand ? "nav-expand" : "nav-collapse"}`}>
       <nav className="flex-1 w-full h-full flex items-center justify-center page-margin border-b-[1px] border-underline">
         <div className="w-1/4 h-full flex items-center">
-          <h1 hidden>NAV</h1>
+          <h1 hidden>Navigation Bar</h1>
           <PiSunHorizonFill size={40} />
         </div>
 
         <ul className="w-full h-full flex items-center justify-around">
-          <li>
-            <Link href="/">
-              <h2>
-                Work
-              </h2>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <h2>
-                About
-              </h2>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <h2>
-                Recently
-              </h2>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <h2>
-                Contact
-              </h2>
-            </Link>
-          </li>
+          {navOptions.map((item) => (
+            <li key={`nav-${item.text}`}>
+              <Link href={item.link}>
+                {item.text}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </section>
