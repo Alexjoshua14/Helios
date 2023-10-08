@@ -77,11 +77,11 @@
 
 /** Keep these synced */
 .page-padding {
-  @apply min-h-screen px-14 pt-40 pb-14;
+  @apply min-h-screen px-6 sm:px-14 pt-40 pb-14;
 }
 
 .page-margin {
-  @apply mx-14;
+  @apply mx-6 sm:mx-14;
 }
 
 .nav-bar {
