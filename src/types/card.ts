@@ -1,7 +1,10 @@
 
 export interface CardInterface {
   id: string,
-  image: string,
+  image: {
+    src: string,
+    alt: string,
+  }
   title: string,
   description?: string,
 }
