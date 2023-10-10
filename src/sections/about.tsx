@@ -1,6 +1,10 @@
-import Link from 'next/link'
-import { FC } from 'react'
+'use client'
 
+import { FC } from 'react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { InfoCard } from '@/components/infoCard'
+import { aboutContent } from '@/data/about'
 interface aboutProps {
 
 }
@@ -19,40 +23,20 @@ const About: FC<aboutProps> = ({ }) => {
           Learn More
         </Link>
       </div>
+      {aboutContent.map((item, index) => (
+        <motion.div
+          key={item.id}
+          className="flex flex-col gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: index * 0.1, ease: 'easeIn' }}
 
-      <div className="flex flex-col gap-6">
-        <p className="text-5xl font-medium">
-          {`270`}
-        </p>
-        <p>
-          {`Over 270 extraterrestials call Helios-designed starships their own`}
-        </p>
-      </div>
-      <div className="flex flex-col gap-6">
-        <p className="text-5xl font-medium">
-          {`20`}
-        </p>
-        <p>
-          {`More than 20 years' collective experience`}
-        </p>
-      </div>
-      <div className="flex flex-col gap-6">
-        <p className="text-5xl font-medium">
-          45
-        </p>
-        <p>
-          {`Over 45 starships designed from completely recycled materials: no limited resources sacrificed for "new"`}
-        </p>
-      </div>
-      <div className="flex flex-col gap-6">
-        <p className="text-5xl font-medium">
-          {`65`}
-        </p>
-        <p>
-          {`Over 65 influencer features`}
-        </p>
+        >
+          <InfoCard header={item.header} caption={item.caption} delay={index * 0.1} />
+        </motion.div>
+      ))}
 
-      </div>
     </section>
   )
 }
