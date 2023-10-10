@@ -113,6 +113,10 @@
   @apply py-20;
 }
 
+.footer {
+  @apply pt-20;
+}
+
 /** Texts */
 
 .section-header {

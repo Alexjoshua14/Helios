@@ -11,8 +11,8 @@ interface aboutProps {
 
 const About: FC<aboutProps> = ({ }) => {
   return (
-    <section className="h-full w-full section-content section grid sm:grid-cols-2 gap-10">
-      <div className="w-full sm:w-1/2 flex flex-col gap-10 sm:col-span-2">
+    <section className="h-full w-full section-content section flex flex-col lg:flex-row lg:justify-between gap-10">
+      <div className="w-full max-w-[420px] flex flex-col gap-10 sm:col-span-2">
         <h2 className="section-header">
           About
         </h2>
@@ -23,20 +23,21 @@ const About: FC<aboutProps> = ({ }) => {
           Learn More
         </Link>
       </div>
-      {aboutContent.map((item, index) => (
-        <motion.div
-          key={item.id}
-          className="flex flex-col gap-6"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3, delay: index * 0.1, ease: 'easeIn' }}
+      <div className="grid sm:grid-cols-2 gap-14 lg:w-1/2">
+        {aboutContent.map((item, index) => (
+          <motion.div
+            key={item.id}
+            className="flex flex-col gap-6"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: index * 0.1, ease: 'easeIn' }}
 
-        >
-          <InfoCard header={item.header} caption={item.caption} delay={index * 0.1} />
-        </motion.div>
-      ))}
-
+          >
+            <InfoCard header={item.header} caption={item.caption} delay={index * 0.1} />
+          </motion.div>
+        ))}
+      </div>
     </section>
   )
 }

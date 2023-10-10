@@ -51,7 +51,7 @@ const Recognition: FC<recognitionProps> = ({ }) => {
       <h2 className="section-header">
         Recognition
       </h2>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col lg:flex-row gap-8">
         {recognizers.map(rec => (
           <Link key={rec.id} href={rec.link} >
             <div className="flex flex-col gap-2">

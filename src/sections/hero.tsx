@@ -7,8 +7,8 @@ interface heroProps {
 
 const Hero: FC<heroProps> = ({ }) => {
   return (
-    <section className="h-full w-full fourths-grid section">
-      <div className="flex flex-col gap-10 section-content">
+    <section className="h-full w-full flex flex-col sm:grid sm:grid-cols-[1fr_3fr] sm:items-center section">
+      <div className="flex flex-col gap-10 section-content max-w-[350px]">
         <h1 className="text-5xl font-medium">
           Design Studio
         </h1>
