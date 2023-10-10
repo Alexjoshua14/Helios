@@ -47,8 +47,10 @@ export function useExpand(throttleDuration: number) {
       clearTimeout(timerID.current);
 
       timerID.current = setTimeout(() => {
+
         setExpand(shouldExpand);
         setThrottle(false);
+        timerID.current = undefined;
       }, throttleDuration);
 
     } else {
@@ -59,7 +61,9 @@ export function useExpand(throttleDuration: number) {
       setThrottle(true);
 
       timerID.current = setTimeout(() => {
+
         setThrottle(false);
+        timerID.current = undefined;
       }, throttleDuration)
     }
   }
@@ -82,6 +86,7 @@ export function useExpand(throttleDuration: number) {
     } else if (direction === 1 && expand) {
       // Scrolling down and expanded
       updateExpand(false)
+    } else {
     }
 
   })
