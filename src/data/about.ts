@@ -17,6 +17,6 @@ export const aboutContent = [
   {
     id: "129083h12eubindsajkasd",
     header: "65",
-    caption: "Over 65 influencer influenced",
+    caption: "Over 65 influencers influenced",
   },
 ]
