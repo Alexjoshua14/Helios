@@ -3,11 +3,10 @@
 import { FC } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+
 import { InfoCard } from '@/components/infoCard'
 import { aboutContent } from '@/data/about'
-interface aboutProps {
-
-}
+interface aboutProps { }
 
 const About: FC<aboutProps> = ({ }) => {
   return (

@@ -1,10 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import { FC } from 'react'
+import Link from 'next/link'
 
-interface heroProps {
-
-}
+interface heroProps { }
 
 const Hero: FC<heroProps> = ({ }) => {
   return (

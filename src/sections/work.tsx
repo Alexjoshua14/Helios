@@ -1,11 +1,10 @@
 
 import { FC } from 'react'
+
 import Carousel from '@/components/carousel'
 import { workContent } from '@/data/work'
 
-interface workProps {
-
-}
+interface workProps { }
 
 const Work: FC<workProps> = ({ }) => {
 

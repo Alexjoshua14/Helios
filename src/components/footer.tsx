@@ -1,9 +1,7 @@
-import Link from 'next/link'
 import { FC } from 'react'
+import Link from 'next/link'
 
-interface footerProps {
-
-}
+interface footerProps { }
 
 const Footer: FC<footerProps> = ({ }) => {
   return (

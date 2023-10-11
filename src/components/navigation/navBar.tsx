@@ -6,9 +6,7 @@ import MobileNavBar from './mobileNavBar'
 import DesktopNavBar from './desktopNavBar'
 import { useMobile } from '@/lib/hooks/useMobile'
 
-interface navBarProps {
-
-}
+interface navBarProps { }
 
 const NavBar: FC<navBarProps> = ({ }) => {
   const [mobile] = useMobile()

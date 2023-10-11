@@ -1,10 +1,10 @@
-import Link from 'next/link'
+
 import { FC } from 'react'
+import Link from 'next/link'
+
 import { recognizers } from '@/data/recognition'
 
-interface recognitionProps {
-
-}
+interface recognitionProps { }
 
 const Recognition: FC<recognitionProps> = ({ }) => {
   return (
