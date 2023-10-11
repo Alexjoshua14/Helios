@@ -26,18 +26,10 @@ const recentWorkContent: CardInterface[] = [
   {
     id: 'woi3dnawd98d21hqwee21eu',
     image: {
-      alt: "ALTTEXTHERE",
-      src: "https://images.unsplash.com/photo-1639262498805-17c7dc422d37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNwYWNlc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      alt: "Futuristic structure in winter",
+      src: "https://images.unsplash.com/photo-1548320542-fb641826ddc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNwYWNlc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     title: 'September 30, 2023',
-  },
-  {
-    id: 'woi12dnawd98d12as21he765u',
-    image: {
-      alt: "ALTTEXTHERE",
-      src: "https://images.unsplash.com/photo-1639262498805-17c7dc422d37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNwYWNlc2hpcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-    },
-    title: 'September 19, 2023',
   },
 ]
 

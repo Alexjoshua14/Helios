@@ -21,6 +21,7 @@ export const InfoCard: FC<infoCardProps> = ({ header, caption, delay }) => {
             key={`${header}-${c}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: delay + .75 + (index * 0.1), ease: "circOut", duration: 0.35 }}
           >
             {c}

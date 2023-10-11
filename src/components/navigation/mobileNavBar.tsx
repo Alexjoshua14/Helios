@@ -12,7 +12,7 @@ import { navOptions } from '@/data/nav'
 interface mobileNavBarProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 const MobileNavBar: FC<mobileNavBarProps> = ({ className }) => {
-  const [dropDownShown, setDropDown] = useState(true);
+  const [dropDownShown, setDropDown] = useState(false);
   const transitionDuration = 1.5;
 
   return (
@@ -62,6 +62,7 @@ const MobileNavBar: FC<mobileNavBarProps> = ({ className }) => {
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: transitionDuration, ease: "anticipate" }}
+            onClick={() => setDropDown(false)}
           />
         }
       </AnimatePresence>
