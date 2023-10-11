@@ -85,7 +85,7 @@
 }
 
 .nav-bar {
-  @apply w-full fixed top-0 z-50 flex items-center justify-between backdrop-blur-3xl transition-all;
+  @apply w-full fixed top-0 z-50 flex items-center justify-between backdrop-blur-3xl;
 }
 
 .nav-collapse {

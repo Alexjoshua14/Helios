@@ -12,7 +12,7 @@ import {useScroll, useVelocity, useSpring, useAnimationFrame } from 'framer-moti
  * @returns expand boolean
  */
 export function useExpand(throttleDuration: number) {
-  const [expand, setExpand] = useState(false);
+  const [expand, setExpand] = useState(true);
   const [throttled, setThrottle] = useState(false);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
