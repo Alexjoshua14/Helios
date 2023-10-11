@@ -1,8 +1,12 @@
 
 import { FC } from 'react'
+import dynamic from 'next/dynamic'
 
-import Carousel from '@/components/carousel'
 import { workContent } from '@/data/work'
+
+const Carousel = dynamic(() => import('@/components/carousel'), {
+  ssr: false
+})
 
 interface workProps { }
 

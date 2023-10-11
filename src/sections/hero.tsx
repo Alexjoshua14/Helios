@@ -18,7 +18,7 @@ const Hero: FC<heroProps> = ({ }) => {
         </Link>
       </div>
       <div className="flex flex-col items-center w-full gap-6">
-        <div className="w-full h-full bg-stone-900 flex items-center justify-center p-4 rounded">
+        <div className="w-full max-w-[400px] sm:max-w-[500px] md:max-w-[700px] h-full bg-stone-900 flex items-center justify-center p-4 rounded">
           <div
             className={`aspect-square w-auto h-[70vh] max-h-[300px] sm:max-h-[400px] lg:max-h-[550px] max-w-full rounded relative
                       bg-gradient-to-tr from-teal-900 to-teal-500 opacity-90 backdrop-blur

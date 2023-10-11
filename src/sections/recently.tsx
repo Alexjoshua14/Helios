@@ -1,7 +1,11 @@
 import { FC } from 'react'
+import dynamic from 'next/dynamic'
 
-import Carousel from '@/components/carousel'
 import { recentWorkContent } from '@/data/recently'
+
+const Carousel = dynamic(() => import('@/components/carousel'), {
+  ssr: false
+})
 
 interface recentlyProps { }
 
