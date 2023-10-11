@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
@@ -20,13 +21,19 @@ const Hero: FC<heroProps> = ({ }) => {
         </Link>
       </div>
       <div className="flex flex-col items-center w-full gap-6">
-        <div className="aspect-square w-auto h-[40vw] max-h-[70vh] max-w-full bg-gradient-to-tr from-pink-800 to-pink-600 opacity-70 bg-opacity-40 backdrop-blur border-[1px] border-stone-100 shadow rounded" />
+        <div className="w-full h-full bg-stone-900 flex items-center justify-center p-4 rounded">
+          <div
+            className={`aspect-square w-auto h-[70vh] max-h-[300px] sm:max-h-[400px] lg:max-h-[550px] max-w-full rounded relative
+                      bg-gradient-to-tr from-teal-900 to-teal-500 opacity-90 backdrop-blur
+                      `}
+          />
+        </div>
         <div className="text-sm grid grid-cols-2 gap-8">
           <p>
-            {`See work: Journey through Ripples`}
+            {`See work: Journey through Linear Gradients`}
           </p>
           <p>
-            {`Some description can go right here`}
+            {`Astronomer Weekly`}
           </p>
         </div>
       </div>
